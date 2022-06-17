@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+# Virtual-TV
+Creating a virtual tv using opencv in python3.
 
-You can use the [editor on GitHub](https://github.com/SAIGANESH02/Virtual-TV/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+In order to run the code follow the below given steps:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1) Make sure the desired videos which are given as input are changed in the
+   source code. (in the variables cap (video which has the frame) and val (video which should be played in the frame)).
 
-### Markdown
+2) Now run the code, now you will be presented with a frame (note : not the tv frame) from the first video (cap), 
+   now define the four corners (physical corners are easily tracked) of the frame in the clockwise manner.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+3) Once the four corners of the frame is selected using the left click of the mouse, press right click.
 
-```markdown
-Syntax highlighted code block
+4) Now you should be able to see the output video playing on the screen.
 
-# Header 1
-## Header 2
-### Header 3
+### Example : 
 
-- Bulleted
-- List
+### INPUT : 
 
-1. Numbered
-2. List
+#### Video1 (containing the frame):
+<img src="https://user-images.githubusercontent.com/70062653/146636173-0573e8f2-5897-49b4-b7fa-8d28ad13e550.png" width="500">
 
-**Bold** and _Italic_ and `Code` text
+#### Video2 (video that should be played on the frame defined on Video1):
+<img src="https://user-images.githubusercontent.com/70062653/146636223-e4a68864-e14c-4b7b-a0e2-6e05352bc783.png" width="500">
 
-[Link](url) and ![Image](src)
-```
+#### User Marked corners :
+User will be asked to mark the corners in the video1 once the code is executed
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Image after the user has defined the corners in the first frame of video1:
 
-### Jekyll Themes
+<img src="https://user-images.githubusercontent.com/70062653/146636262-c1ac0d71-c6aa-4cd3-bbcb-7a8b0ce22daa.png" width="500">
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SAIGANESH02/Virtual-TV/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### OUTPUT :
+Once the frame is defined in the video1, we can see that the video2 starts playing in the frame defined by the user in video1
 
-### Support or Contact
+<img src="https://user-images.githubusercontent.com/70062653/146636349-3833f426-b3fd-4a7c-9b79-0b74fabca0d1.png" width="500">
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
